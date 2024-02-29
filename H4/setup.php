@@ -25,9 +25,9 @@ if ($dbc->connect_error) {
 //Query 2
 $sql = "CREATE TABLE user( 
     `u#` INT NOT NULL AUTO_INCREMENT,
-    `nickname` VARCHAR(50), 
-    `password` VARCHAR(100), 
-    `email` VARCHAR(100),
+    `nickname` VARCHAR(50)  NOT NULL, 
+    `password` VARCHAR(100)  NOT NULL, 
+    `email` VARCHAR(100)  NOT NULL,
     `isAdmin` BOOLEAN,
     PRIMARY KEY(`u#`),
     UNIQUE(`email`)
