@@ -14,9 +14,9 @@ if ($dbc->connect_error) {
 }
 
 //Query
-$nickname = $_GET['nickname'];
-$password = $_GET['password'];
-$email = $_GET['email'];
+$nickname = $_POST['nickname'];
+$password = $_POST['password'];
+$email = $_POST['email'];
 $sql = "INSERT INTO user (nickname, password, email)
 VALUES('{$nickname}', '{$password}', '{$email}')";
 $result = $dbc->query($sql);
