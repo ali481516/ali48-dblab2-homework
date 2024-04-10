@@ -21,7 +21,7 @@ $sql = "INSERT INTO user (nickname, password, email)
 VALUES('{$nickname}', '{$password}', '{$email}')";
 $result = $dbc->query($sql);
 if ($result) {
-    echo "query executed successfully<br>";
+    echo "Insert query executed successfully<br>";
 } else {
     echo "Error:" . $sql . "<br>" . $dbc->error;
 }
