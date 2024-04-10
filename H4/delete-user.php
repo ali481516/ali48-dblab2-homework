@@ -19,7 +19,7 @@ $sql = "DELETE FROM user
         WHERE email = '{$email}'";
 $result = $dbc->query($sql);
 if ($result) {
-    echo "query executed successfully<br>";
+    echo "Delete query executed successfully<br>";
 } else {
     echo "Error:" . $sql . "<br>" . $dbc->error;
 }
