@@ -11,7 +11,7 @@ $dbc = new mysqli($serverName, $userName, $password);
 $sql = "CREATE DATABASE IF NOT EXISTS {$dbname}";
 $result = $dbc->query($sql);
 if ($result) {
-    echo "query executed successfully<br>";
+    echo "Create database query executed successfully<br>";
 } else {
     echo "Error:" . $sql . "<br>" . $dbc->error;
 }
@@ -34,7 +34,7 @@ $sql = "CREATE TABLE user(
 )";
 $result = $dbc->query($sql);
 if ($result) {
-    echo "query executed successfully<br>";
+    echo "Create table query executed successfully<br>";
 } else {
     echo "Error:" . $sql . "<br>" . $dbc->error;
 }
